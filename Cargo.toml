@@ -1,0 +1,15 @@
+[package]
+name = "try-iterator"
+version = "0.1.0"
+authors = ["Rodrigo Cesar de Freitas Dias <rcesar@gmail.com>"]
+description = "Adds a few fallible methods to iterators."
+categories = ["algorithms", "rust-patterns"]
+keywords = ["iterator", "try", "error", "result"]
+license = "MIT"
+repository = "https://github.com/rodrigocfd/try-iterator"
+readme = "README.md"
+include = ["/src/**/*", "/Cargo.toml", "/LICENSE.md", "/README.md"]
+edition = "2021"
+
+# Generate docs locally:
+# cargo +nightly doc
