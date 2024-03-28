@@ -245,3 +245,34 @@ pub trait TryIterator: Iterator {
 		Ok(None)
 	}
 }
+
+impl<'a, T> TryIterator for core::slice::Iter<'a, T> {}
+impl<A, B> TryIterator for std::iter::Chain<A, B> where A: Iterator, B: Iterator<Item = <A as Iterator>::Item> {}
+impl<'a, I, T> TryIterator for std::iter::Cloned<I> where T: 'a + Clone, I: Iterator<Item = &'a T> {}
+impl<'a, I, T> TryIterator for std::iter::Copied<I> where T: 'a + Copy, I: Iterator<Item = &'a T> {}
+impl<I> TryIterator for std::iter::Cycle<I> where I: Clone + Iterator {}
+impl<T> TryIterator for std::iter::Empty<T> {}
+impl<I> TryIterator for std::iter::Enumerate<I> where I: Iterator {}
+impl<I, P> TryIterator for std::iter::Filter<I, P> where I: Iterator, P: FnMut(&<I as Iterator>::Item) -> bool {}
+impl<B, I, F> TryIterator for std::iter::FilterMap<I, F> where I: Iterator, F: FnMut(<I as Iterator>::Item) -> Option<B> {}
+impl<I, U, F> TryIterator for std::iter::FlatMap<I, U, F> where I: Iterator, U: IntoIterator, F: FnMut(<I as Iterator>::Item) -> U {}
+impl<I, U> TryIterator for std::iter::Flatten<I> where I: Iterator, <I as Iterator>::Item: IntoIterator<IntoIter = U, Item = <U as Iterator>::Item>, U: Iterator {}
+impl<T, F> TryIterator for std::iter::FromFn<F> where F: FnMut() -> Option<T> {}
+impl<I> TryIterator for std::iter::Fuse<I> where I: Iterator {}
+impl<I, F> TryIterator for std::iter::Inspect<I, F> where I: Iterator, F: FnMut(&<I as Iterator>::Item) {}
+impl<B, I, F> TryIterator for std::iter::Map<I, F> where I: Iterator, F: FnMut(<I as Iterator>::Item) -> B {}
+impl<B, I, P> TryIterator for std::iter::MapWhile<I, P> where I: Iterator, P: FnMut(<I as Iterator>::Item) -> Option<B> {}
+impl<T> TryIterator for std::iter::Once<T> {}
+impl<A, F> TryIterator for std::iter::OnceWith<F> where F: FnOnce() -> A {}
+impl<I> TryIterator for std::iter::Peekable<I> where I: Iterator {}
+impl<A> TryIterator for std::iter::Repeat<A> where A: Clone {}
+impl<A, F> TryIterator for std::iter::RepeatWith<F> where F: FnMut() -> A {}
+impl<I> TryIterator for std::iter::Rev<I> where I: DoubleEndedIterator {}
+impl<B, I, St, F> TryIterator for std::iter::Scan<I, St, F> where I: Iterator, F: FnMut(&mut St, <I as Iterator>::Item) -> Option<B> {}
+impl<I> TryIterator for std::iter::Skip<I> where I: Iterator {}
+impl<I, P> TryIterator for std::iter::SkipWhile<I, P> where I: Iterator, P: FnMut(&<I as Iterator>::Item) -> bool {}
+impl<I> TryIterator for std::iter::StepBy<I> where I: Iterator {}
+impl<T, F> TryIterator for std::iter::Successors<T, F> where F: FnMut(&T) -> Option<T> {}
+impl<I> TryIterator for std::iter::Take<I> where I: Iterator {}
+impl<I, P> TryIterator for std::iter::TakeWhile<I, P> where I: Iterator, P: FnMut(&<I as Iterator>::Item) -> bool {}
+impl<A, B> TryIterator for std::iter::Zip<A, B> where A: Iterator, B: Iterator {}
