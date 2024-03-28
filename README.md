@@ -5,14 +5,14 @@
 [![Lines of code](https://tokei.rs/b1/github/rodrigocfd/try-iterator)](https://github.com/rodrigocfd/try-iterator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Adds the following fallible methods to iterators:
+Declares and implements the [`TryIterator`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html) trait, which will add the following fallible methods to iterators:
 
 | New method | Analog to |
 | -- | -- |
-| `try_all` | [`all`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all) |
-| `try_any` | [`any`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.any) |
-| `try_position` | [`position`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.position) |
-| `try_rposition` | [`rposition`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rposition) |
+| [`try_all`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html#method.try_all) | [`all`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all) |
+| [`try_any`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html#method.try_any) | [`any`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.any) |
+| [`try_position`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html#method.try_position) | [`position`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.position) |
+| [`try_rposition`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html#method.try_rposition) | [`rposition`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rposition) |
 
 ## Motivation
 

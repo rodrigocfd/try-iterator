@@ -2,14 +2,14 @@
 [GitHub](https://github.com/rodrigocfd/try-iterator) •
 [Docs](https://docs.rs/try-iterator/)
 
-Adds the following fallible methods to iterators:
+Declares and implements the [`TryIterator`](crate::prelude::TryIterator) trait, which will add the following fallible methods to iterators:
 
 | New method | Analog to |
 | -- | -- |
-| `try_all` | [`all`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all) |
-| `try_any` | [`any`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.any) |
-| `try_position` | [`position`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.position) |
-| `try_rposition` | [`rposition`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rposition) |
+| [`try_all`](crate::prelude::TryIterator::try_all) | [`all`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all) |
+| [`try_any`](crate::prelude::TryIterator::try_any) | [`any`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.any) |
+| [`try_position`](crate::prelude::TryIterator::try_position) | [`position`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.position) |
+| [`try_rposition`](crate::prelude::TryIterator::try_rposition) | [`rposition`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rposition) |
 
 ## Motivation
 
