@@ -4,10 +4,12 @@
 
 Adds the following fallible methods to iterators:
 
-* `try_all`
-* `try_any`
-* `try_position`
-* `try_rposition`
+| New method | Analog to |
+| -- | -- |
+| `try_all` | [`all`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all) |
+| `try_any` | [`any`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.any) |
+| `try_position` | [`position`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.position) |
+| `try_rposition` | [`rposition`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.rposition) |
 
 ## Motivation
 
