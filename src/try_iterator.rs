@@ -1,9 +1,15 @@
-/// Implements the following additional iterator methods:
+/// Implements the following fallible iterator methods:
 ///
 /// * `try_all`;
 /// * `try_any`;
 /// * `try_position`;
 /// * `try_rposition`.
+///
+/// Prefer importing this trait through the crate prelude:
+///
+/// ```
+/// use try_iterator::prelude::*;
+/// ```
 pub trait TryIterator: Iterator {
 	/// Tests if every element of the iterator matches a predicate, stopping at
 	/// the first error and returning that error.

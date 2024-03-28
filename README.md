@@ -5,7 +5,7 @@
 [![Lines of code](https://tokei.rs/b1/github/rodrigocfd/try-iterator)](https://github.com/rodrigocfd/try-iterator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Declares and implements the [`TryIterator`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html) trait, which will add the following fallible methods to iterators:
+Implements the [`TryIterator`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html) trait, which will add the following fallible methods to iterators:
 
 | New method | Analog to |
 | -- | -- |
@@ -16,9 +16,9 @@ Declares and implements the [`TryIterator`](https://docs.rs/try-iterator/latest/
 
 ## Motivation
 
-This crate was born out of the necessity of a fallible version for the [`Iterator::position`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.position) method, which was asked in [this StackOverflow question](https://stackoverflow.com/q/78218651/6923555). Contrary to the equivalent [`try_for_each`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.try_for_each), the solution is rather cumbersome, which resulted in [this issue](https://github.com/rust-lang/libs-team/issues/361) in the Rust repository.
+This crate was born out of necessity of a fallible version for the [`Iterator::position`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.position) method, which was asked in [this StackOverflow question](https://stackoverflow.com/q/78218651/6923555). Contrary to the equivalent [`try_for_each`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.try_for_each), the solution is rather cumbersome, which resulted in [this issue](https://github.com/rust-lang/libs-team/issues/361) in the Rust repository.
 
-Until the standard library adds these methods – if ever –, they are available in this crate.
+Until the standard library adds these fallible methods – if ever –, they are available in this crate.
 
 ## Usage
 
