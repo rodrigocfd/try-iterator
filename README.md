@@ -26,7 +26,7 @@ Add the dependency in your `Cargo.toml`:
 
 ```toml
 [dependencies]
-try-iterator = { version = "0.0.1" }
+try-iterator = { version = "1.0.0" }
 ```
 
 Then import the `prelude` at the top of your source files:

@@ -1,6 +1,6 @@
 [package]
 name = "try-iterator"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Rodrigo Cesar de Freitas Dias <rcesar@gmail.com>"]
 description = "Adds a few fallible methods to iterators."
 categories = ["algorithms", "rust-patterns"]
