@@ -5,7 +5,7 @@
 [![Lines of code](https://tokei.rs/b1/github/rodrigocfd/try-iterator)](https://github.com/rodrigocfd/try-iterator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Implements the [`TryIterator`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html) trait, which will add the following fallible methods to iterators:
+Implements the [`TryIterator`](https://docs.rs/try-iterator/latest/try_iterator/prelude/trait.TryIterator.html) trait, which will add the following fallible methods to [`Iterator`](https://doc.rust-lang.org/std/iter/trait.Iterator.html):
 
 | New method | Analog to |
 | -- | -- |

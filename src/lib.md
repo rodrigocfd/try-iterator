@@ -2,7 +2,7 @@
 [GitHub](https://github.com/rodrigocfd/try-iterator) •
 [Docs](https://docs.rs/try-iterator/)
 
-Implements the [`TryIterator`](crate::prelude::TryIterator) trait, which will add the following fallible methods to iterators:
+Implements the [`TryIterator`](crate::prelude::TryIterator) trait, which will add the following fallible methods to [`Iterator`](https://doc.rust-lang.org/std/iter/trait.Iterator.html):
 
 | New method | Analog to |
 | -- | -- |
